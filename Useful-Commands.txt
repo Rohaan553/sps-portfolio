@@ -1,0 +1,12 @@
+To Run Tutorials: "teachme ~/software-product-sprint/walkthroughs/week-x-topic/name-walkthrough.md"
+TO Deploy the Portfolio (First cd into the portfolio directory: "cd ~/software-product-sprint/portfolio"): "mvn package appengine:deploy" 
+To Navigate to the Portfolio Website (URL for the Browser): "rwasim-sps-summer22.appspot.com"
+For Creating and Switching To a New Branch: "git checkout -b YOUR_BRANCH_NAME"
+To Switch to a Branch: "git checkout YOUR_BRANCH_NAME" OR "git switch YOUR_BRANCH_NAME"
+Committing and Pushing your changes to GitHub:
+    1. Create New Branch: "git checkout -b YOUR_BRANCH_NAME"
+    2. Make Changes
+    3. Add files For Committing: "git add ." OR "git add FILE_NAME" (Make sure "Useful-Commands.txt" isn't staged!)
+    4. Commit your Changes: "git commit -m "YOUR_COMMIT_MESSAGE""
+    5. Push your Changes: "git push origin YOUR_BRANCH_NAME"
+    6. Open Pull Request w/ Details and Wait For Review
