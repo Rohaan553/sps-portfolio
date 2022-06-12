@@ -12,13 +12,40 @@
     <div id="content">
       <p><a href="/projects.html">Projects</a></p>
       <h1>Rohaan's Portfolio</h1>
-      <p>Hi! I'm Rohaan, a rising junior majoring in Computer Science and minoring in Statistics. 
-         Thanks for visiting my portfolio! 
+      <p>Hi! I'm Rohaan, a rising junior majoring in Computer Science and minoring in Statistics.
+         Thanks for visiting my portfolio!
       </p>
-      <img src="/images/Old_LinkedIn_Profile_Pic.jpg">
+      <img src="https://storage.googleapis.com/rwasim-sps-summer22.appspot.com/static/Rohaans_New_LinkedIn_Profile_Pic.jpg" width="500">
+      <p>
+        Hi! I'm Rohaan, a rising junior majoring in Computer Science and minoring in Statistics at the University of Pittsburgh!
+        I am passionate about web development and looking forward to exploring data science in the near future. I didn't grow up around code, but
+        I fell in love with it in my senior year in high school and the rest is history. In my free time, I like watching anime, gaming, gardening, and
+        cooking. Thanks for visiting my portfolio!
+      </p>
+      <p id="contact-form">Contact Me!</p>
+      <form action="/form-handler" method="POST">
+        <label>Name*:
+            <input name="user-name" required="required" autocomplete="on">
+        </label>
+        <br/>
+        <label>Email*:
+            <input name="user-email" required="required" autocomplete="on">
+        </label>
+        <br/>
+        <label>Message*:
+            <input name="user-message" required="required" autocomplete="on">
+        </label>
+        <br/>
+        <label>Fun Fact About You:
+            <input name="user-fun-fact" autocomplete="on">
+        </label>
+        <!-- <textarea name="text-input">hello world</textarea> -->
+        <br/>
+        <input type="submit" />
+      </form>
       <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p> 
-      <button onclick="addRandomGreeting()">Hello</button> 
+      <p>Click here to get a random message:</p>
+      <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div> -->
     </div>
   </body>
