@@ -1,3 +1,9 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: 'Amiri', serif;
+}
+
 #content {
   margin-left: auto;
   margin-right: auto;
