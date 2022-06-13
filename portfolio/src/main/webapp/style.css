@@ -5,9 +5,19 @@ html {
     font-size: 12px;
 }
 
-p{
+p {
   font-size: 1.5em;
 }
+
+h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
 
 #content {
   margin-left: auto;
@@ -18,4 +28,16 @@ p{
 
 #greeting-container {
   margin-top: 20px;
+}
+
+#piano-image {
+  width: 30vw;
+  display: inline-block;
+  margin: 0 auto 10px;
+}
+
+#gofish-video {
+  width: 25vw;
+  display: inline-block;
+  margin: 0 auto 10px;
 }
