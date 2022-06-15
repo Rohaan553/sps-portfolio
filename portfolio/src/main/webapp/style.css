@@ -18,6 +18,9 @@ h2 {
   font-size: 2.5rem;
 }
 
+label {
+    display: block;
+}
 
 #content {
   margin-left: auto;
