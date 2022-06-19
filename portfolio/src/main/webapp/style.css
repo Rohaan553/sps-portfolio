@@ -22,6 +22,10 @@ label {
     display: block;
 }
 
+form {
+  margin-bottom: 20px;
+}
+
 #content {
   margin-left: auto;
   margin-right: auto;

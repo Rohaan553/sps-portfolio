@@ -27,12 +27,17 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 }
 
+/**
+ * Fetches a list of messages, choses 1 randomly, and displays it on the page 
+ */
 async function getSubmissionMessage()
 { 
-  const response = await fetch("/hello");
-  const responseContent = await response.text();
+  const response = await fetch("/random-message");
+  const responseContent = await response.json();
   console.log(responseContent);
+  const message = responseContent[Math.floor(Math.random() * responseContent.length)];
+  console.log(message);
 
-  let submissionPrompt = document.getElementById("hello-world");
-  submissionPrompt.innerText = responseContent;
+  let submissionPrompt = document.getElementById("random-message-container");
+  submissionPrompt.innerText = message;
 } 
