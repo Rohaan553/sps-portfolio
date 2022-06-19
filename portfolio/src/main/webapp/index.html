@@ -52,26 +52,33 @@
       </video>
       
       <p id="contact-form">Contact Me!</p>
+      <!-- action="/form-handler" method="POST"-->
       <form action="/form-handler" method="POST">
         <label>Name*:
-            <input name="user-name" required="required" autocomplete="on">
+            <input name="user-name" required="required" autocomplete="on" id="user-name">
         </label>
         <br/>
         <label>Email*:
-            <input name="user-email" required="required" autocomplete="on">
+            <input name="user-email" required="required" autocomplete="on" id="user-email">
         </label>
         <br/>
         <label>Message*:
-            <input name="user-message" required="required" autocomplete="on">
+            <input name="user-message" required="required" autocomplete="on" id="user-message">
         </label>
         <br/>
         <label>Fun Fact About You:
-            <input name="user-fun-fact" autocomplete="on">
+            <input name="user-fun-fact" autocomplete="on" id="user-fun-fact">
         </label>
-        <!-- <textarea name="text-input">hello world</textarea> -->
         <br/>
-        <input type="submit" />
+        <!-- type="submit"  -->
+        <input name="submission-button" type="submit">
+        <br/>
       </form>
+      <hr>
+      <button onclick="getSubmissionMessage()">
+        Hello
+      </button>
+      <p id="hello-world"></p>
       <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
