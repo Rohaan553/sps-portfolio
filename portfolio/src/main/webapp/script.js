@@ -30,14 +30,19 @@ function addRandomGreeting() {
 /**
  * Fetches a list of messages, choses 1 randomly, and displays it on the page 
  */
+let response = null;
+let responseContent = null;
 async function getSubmissionMessage()
 { 
-  const response = await fetch("/random-message");
-  const responseContent = await response.json();
-  console.log(responseContent);
+  if(response == null)
+  {
+    response = await fetch("/random-message");
+    responseContent = await response.json();
+    console.log(responseContent);
+  }
   const message = responseContent[Math.floor(Math.random() * responseContent.length)];
   console.log(message);
 
-  let submissionPrompt = document.getElementById("random-message-container");
+  const submissionPrompt = document.getElementById("random-message-container");
   submissionPrompt.innerText = message;
 } 
