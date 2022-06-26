@@ -53,31 +53,31 @@
       
       <p id="contact-form">Contact Me!</p>
       <!-- action="/form-handler" method="POST"-->
-      <form action="/form-handler" method="POST">
+      <form action="/form-handler" method="POST" enctype="multipart/form-data">
         <label>Name*:
-            <input name="user-name" required="required" autocomplete="on" id="user-name">
+            <input name="user-name" required="required" autocomplete="on">
         </label>
         <br/>
         <label>Email*:
-            <input name="user-email" required="required" autocomplete="on" id="user-email">
+            <input name="user-email" required="required" autocomplete="on">
         </label>
         <br/>
         <label>Message*:
-            <input name="user-message" required="required" autocomplete="on" id="user-message">
+            <input name="user-message" required="required" autocomplete="on">
         </label>
         <br/>
         <label>Fun Fact About You:
-            <input name="user-fun-fact" autocomplete="on" id="user-fun-fact">
+            <input name="user-fun-fact" autocomplete="on">
         </label>
-        <br/>
-        <!-- type="submit"  -->
-        <input name="submission-button" type="submit">
         <br/>
         <label>Add a Face to the Name?:
           <br/>
           <input type="file" name="image-upload">
         </label>
+        <br/>
+        <input name="submission-button" type="submit">
       </form>
+      
       <button onclick="getSubmissionMessage()">
         Here's a Fun-Fact About Me:
       </button>
