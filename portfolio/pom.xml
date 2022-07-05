@@ -52,6 +52,45 @@
       <artifactId>google-cloud-storage</artifactId>
       <version>1.113.0</version>
     </dependency>
+
+    <!-- HikariCP -->
+    <dependency>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+      <version>5.0.1</version>
+    </dependency>
+
+    <!-- JDBC Socket Factory For MySQL -->
+    <dependency>
+      <groupId>com.google.cloud.sql</groupId>
+      <artifactId>mysql-socket-factory-connector-j-8</artifactId>
+      <version>1.6.1</version>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.29</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.google.http-client/google-http-client -->
+    <dependency>
+        <groupId>com.google.http-client</groupId>
+        <artifactId>google-http-client</artifactId>
+        <version>1.42.1</version>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
+    <dependency>
+        <groupId>com.google.api-client</groupId>
+        <artifactId>google-api-client</artifactId>
+        <version>1.35.2</version>
+    </dependency>
+
+
   </dependencies>
 
   <build>
@@ -112,13 +151,13 @@
 
       <!-- App Engine plugin for deploying to the live site. -->
       <plugin>
-        <groupId>com.google.cloud.tools</groupId>
-        <artifactId>appengine-maven-plugin</artifactId>
-        <version>2.2.0</version>
-        <configuration>
-          <projectId>${googleCloudProjectId}</projectId>
-          <version>1</version>
-        </configuration>
+            <groupId>com.google.cloud.tools</groupId>
+            <artifactId>appengine-maven-plugin</artifactId>
+            <version>2.4.3</version>
+            <configuration>
+                <projectId>rwasim-sps-summer22</projectId>
+                <version>1</version>
+            </configuration>
       </plugin>
     </plugins>
   </build>
