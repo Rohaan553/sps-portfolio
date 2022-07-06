@@ -35,6 +35,11 @@
         In my free time, I like watching anime, gaming, gardening, and cooking. Thanks for visiting my portfolio!
       </p>
 
+      <button onclick="getSubmissionMessage()">
+        Here's a Fun-Fact About Me:
+      </button>
+      <p id="random-message-container"></p>
+
       <!-----------
         Projects
       ------------>
@@ -52,7 +57,8 @@
       </video>
       
       <p id="contact-form">Contact Me!</p>
-      <form action="/form-handler" method="POST">
+      <!-- action="/form-handler" method="POST"-->
+      <form action="/form-handler" method="POST" enctype="multipart/form-data">
         <label>Name*:
             <input name="user-name" required="required" autocomplete="on">
         </label>
@@ -68,14 +74,14 @@
         <label>Fun Fact About You:
             <input name="user-fun-fact" autocomplete="on">
         </label>
-        <!-- <textarea name="text-input">hello world</textarea> -->
         <br/>
-        <input type="submit" />
+        <label>Add a Face to the Name?:
+          <br/>
+          <input type="file" name="image-upload">
+        </label>
+        <br/>
+        <input name="submission-button" type="submit">
       </form>
-      <!-- <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div> -->
     </div>
   </body>
 </html>
