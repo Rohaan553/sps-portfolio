@@ -26,7 +26,7 @@ public class CloudSQLServlet extends HttpServlet {
     HikariConfig config = new HikariConfig();
    
     
-    config.setJdbcUrl("jdbc:mysql:///test");
+    config.setJdbcUrl("jdbc:mysql://google/test");
     config.setUsername("anyone");
     config.setPassword("cdobno");
     config.addDataSourceProperty("socketFactory", "com.google.cloud.sql.mysql.SocketFactory");
